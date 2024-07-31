@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Juuso Heinisuo">
 <meta name="keywords" content="Tilannekuvakirja, väestö, yhteistyö, avoin lähdekoodi, Tilastokeskus, Luonnonvarakeskus">
-<meta name="description" content="Tilannekuvakirja tarjoaa tietoa väestöstä, työmarkkinoista, asumisesta, rakentamisesta ja taloudesta. Tietolähteinä käytetään esimerkiksi Tilastokeskuksen, Valtiokonttorin ja Luonnonvarakeskuksen tilastoaineistoa, avoimilta rajapinnoilta. Tilannekuvakirjaa kehitetään yhteistyössä kuntien kanssa.">
-<title>Tilannekuva 2023</title>
+<meta name="description" content="Tilannekuvakirja tarjoaa tietoa väestöstä, työmarkkinoista, asumisesta, rakentamisesta, taloudesta ja verotuksesta. Tietolähteinä käytetään esimerkiksi Tilastokeskuksen, Valtiokonttorin, Verottajan ja Luonnonvarakeskuksen tilastoaineistoa, avoimilta rajapinnoilta. Tilannekuvakirjaa kehitetään yhteistyössä kuntien kanssa.">
+<title>Tilannekuva 2024</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,7 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Lähetä",
     "search-label": "Hae"
   }
-}</script><script src="site_libs/kePrint-0.0.1/kePrint.js"></script><link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
-<script src="site_libs/htmlwidgets-1.6.0/htmlwidgets.js"></script><script src="site_libs/plotly-binding-4.10.1/plotly.js"></script><script src="site_libs/typedarray-0.1/typedarray.min.js"></script><script src="site_libs/jquery-3.5.1/jquery.min.js"></script><link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+}</script><script src="site_libs/htmlwidgets-1.6.0/htmlwidgets.js"></script><script src="site_libs/plotly-binding-4.10.1/plotly.js"></script><script src="site_libs/typedarray-0.1/typedarray.min.js"></script><script src="site_libs/jquery-3.5.1/jquery.min.js"></script><link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
 <script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script><link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
 <script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 </head>
@@ -203,12 +202,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kunnallisvero</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./verotus_laskenta.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Verotus</span></span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
@@ -234,16 +227,21 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sisällysluettelo</h2>
    
   <ul>
-<li><a href="#vanhojen-osakeasuntojen-neli%C3%B6hinnat" id="toc-vanhojen-osakeasuntojen-neliöhinnat" class="nav-link active" data-scroll-target="#vanhojen-osakeasuntojen-neli%C3%B6hinnat"><span class="header-section-number">1.1</span> Vanhojen osakeasuntojen neliöhinnat</a></li>
-  <li><a href="#vanhojen-osakeasuntojen-kaupat" id="toc-vanhojen-osakeasuntojen-kaupat" class="nav-link" data-scroll-target="#vanhojen-osakeasuntojen-kaupat"><span class="header-section-number">1.2</span> Vanhojen osakeasuntojen kaupat</a></li>
-  <li><a href="#kes%C3%A4m%C3%B6kkien-lukum%C3%A4%C3%A4r%C3%A4" id="toc-kesämökkien-lukumäärä" class="nav-link" data-scroll-target="#kes%C3%A4m%C3%B6kkien-lukum%C3%A4%C3%A4r%C3%A4"><span class="header-section-number">1.3</span> Kesämökkien lukumäärä</a></li>
-  <li><a href="#kes%C3%A4m%C3%B6kit-valmistumisvuoden-mukaan" id="toc-kesämökit-valmistumisvuoden-mukaan" class="nav-link" data-scroll-target="#kes%C3%A4m%C3%B6kit-valmistumisvuoden-mukaan"><span class="header-section-number">1.4</span> Kesämökit valmistumisvuoden mukaan</a></li>
+<li>
+<a href="#asuminen-ja-rakentaminen" id="toc-asuminen-ja-rakentaminen" class="nav-link active" data-scroll-target="#asuminen-ja-rakentaminen"><span class="header-section-number">2</span> Asuminen ja rakentaminen</a>
+  <ul class="collapse">
+<li><a href="#vanhojen-osakeasuntojen-neli%C3%B6hinnat" id="toc-vanhojen-osakeasuntojen-neliöhinnat" class="nav-link" data-scroll-target="#vanhojen-osakeasuntojen-neli%C3%B6hinnat"><span class="header-section-number">2.1</span> Vanhojen osakeasuntojen neliöhinnat</a></li>
+  <li><a href="#vanhojen-osakeasuntojen-kaupat" id="toc-vanhojen-osakeasuntojen-kaupat" class="nav-link" data-scroll-target="#vanhojen-osakeasuntojen-kaupat"><span class="header-section-number">2.2</span> Vanhojen osakeasuntojen kaupat</a></li>
+  <li><a href="#kes%C3%A4m%C3%B6kkien-lukum%C3%A4%C3%A4r%C3%A4" id="toc-kesämökkien-lukumäärä" class="nav-link" data-scroll-target="#kes%C3%A4m%C3%B6kkien-lukum%C3%A4%C3%A4r%C3%A4"><span class="header-section-number">2.3</span> Kesämökkien lukumäärä</a></li>
+  <li><a href="#kes%C3%A4m%C3%B6kit-valmistumisvuoden-mukaan" id="toc-kesämökit-valmistumisvuoden-mukaan" class="nav-link" data-scroll-target="#kes%C3%A4m%C3%B6kit-valmistumisvuoden-mukaan"><span class="header-section-number">2.4</span> Kesämökit valmistumisvuoden mukaan</a></li>
+  </ul>
+</li>
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/Kangasalakehitys/tilannekuva/edit/main/asuminen.qmd" class="toc-action"><i class="bi bi-github"></i>Muokkaa sivua</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <h1 class="title">
-<span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Asuminen ja rakentaminen</span>
+<span class="chapter-number">1</span>&nbsp; <span class="chapter-title">prefer-html: true</span>
 </h1>
 </div>
 
@@ -252,6 +250,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Julkaistu</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">1. maaliskuuta 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -264,467 +268,1988 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </div>
 
-</header><section id="vanhojen-osakeasuntojen-neliöhinnat" class="level2" data-number="1.1"><h2 data-number="1.1" class="anchored" data-anchor-id="vanhojen-osakeasuntojen-neliöhinnat">
-<span class="header-section-number">1.1</span> Vanhojen osakeasuntojen neliöhinnat</h2>
+</header><hr>
+<section id="asuminen-ja-rakentaminen" class="level1" data-number="2"><h1 data-number="2">
+<span class="header-section-number">2</span> Asuminen ja rakentaminen</h1>
+<section id="vanhojen-osakeasuntojen-neliöhinnat" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="vanhojen-osakeasuntojen-neliöhinnat">
+<span class="header-section-number">2.1</span> Vanhojen osakeasuntojen neliöhinnat</h2>
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; border-bottom: 0;">
+<div id="ixqjbuowqq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
 
-<table class="lightable-classic lightable-striped table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Vanhojen osakeasuntojen neliöhinnat</caption>
-<thead><tr class="header">
-<th style="text-align: center;" data-quarto-table-cell-role="th">Vuosi</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Talotyypit yhteensä</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Rivitalot</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Kerrostalot</th>
+#ixqjbuowqq .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 90%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#ixqjbuowqq .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ixqjbuowqq .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#ixqjbuowqq .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#ixqjbuowqq .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#ixqjbuowqq .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ixqjbuowqq .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ixqjbuowqq .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#ixqjbuowqq .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#ixqjbuowqq .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#ixqjbuowqq .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#ixqjbuowqq .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#ixqjbuowqq .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#ixqjbuowqq .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ixqjbuowqq .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#ixqjbuowqq .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#ixqjbuowqq .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#ixqjbuowqq .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ixqjbuowqq .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#ixqjbuowqq .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#ixqjbuowqq .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ixqjbuowqq .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#ixqjbuowqq .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#ixqjbuowqq .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ixqjbuowqq .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ixqjbuowqq .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#ixqjbuowqq .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#ixqjbuowqq .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ixqjbuowqq .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ixqjbuowqq .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ixqjbuowqq .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ixqjbuowqq .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ixqjbuowqq .gt_left {
+  text-align: left;
+}
+
+#ixqjbuowqq .gt_center {
+  text-align: center;
+}
+
+#ixqjbuowqq .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#ixqjbuowqq .gt_font_normal {
+  font-weight: normal;
+}
+
+#ixqjbuowqq .gt_font_bold {
+  font-weight: bold;
+}
+
+#ixqjbuowqq .gt_font_italic {
+  font-style: italic;
+}
+
+#ixqjbuowqq .gt_super {
+  font-size: 65%;
+}
+
+#ixqjbuowqq .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#ixqjbuowqq .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#ixqjbuowqq .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#ixqjbuowqq .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#ixqjbuowqq .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#ixqjbuowqq .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#ixqjbuowqq .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true">
+<thead class="gt_col_headings"><tr class="header">
+<th id="Vuosi" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Vuosi</th>
+<th id="Talotyypit yhteensä" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Talotyypit yhteensä</th>
+<th id="Rivitalot" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Rivitalot</th>
+<th id="Kerrostalot" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Kerrostalot</th>
 </tr></thead>
-<tbody>
+<tbody class="gt_table_body">
 <tr class="odd">
-<td style="text-align: center;">2006</td>
-<td style="text-align: left;">1502</td>
-<td style="text-align: center;">1655</td>
-<td style="text-align: center;">1332</td>
+<td class="gt_row gt_right" headers="Vuosi">2006</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">1502</td>
+<td class="gt_row gt_right" headers="Rivitalot">1655</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1332</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2007</td>
-<td style="text-align: left;">1654</td>
-<td style="text-align: center;">1825</td>
-<td style="text-align: center;">1461</td>
+<td class="gt_row gt_right" headers="Vuosi">2007</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">1654</td>
+<td class="gt_row gt_right" headers="Rivitalot">1825</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1461</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2008</td>
-<td style="text-align: left;">1700</td>
-<td style="text-align: center;">1808</td>
-<td style="text-align: center;">1575</td>
+<td class="gt_row gt_right" headers="Vuosi">2008</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">1700</td>
+<td class="gt_row gt_right" headers="Rivitalot">1808</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1575</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2009</td>
-<td style="text-align: left;">1744</td>
-<td style="text-align: center;">1860</td>
-<td style="text-align: center;">1591</td>
+<td class="gt_row gt_right" headers="Vuosi">2009</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">1744</td>
+<td class="gt_row gt_right" headers="Rivitalot">1860</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1591</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2010</td>
-<td style="text-align: left;">1843</td>
-<td style="text-align: center;">2002</td>
-<td style="text-align: center;">1594</td>
+<td class="gt_row gt_right" headers="Vuosi">2010</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">1843</td>
+<td class="gt_row gt_right" headers="Rivitalot">2002</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1594</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2011</td>
-<td style="text-align: left;">1830</td>
-<td style="text-align: center;">1983</td>
-<td style="text-align: center;">1627</td>
+<td class="gt_row gt_right" headers="Vuosi">2011</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">1830</td>
+<td class="gt_row gt_right" headers="Rivitalot">1983</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1627</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2012</td>
-<td style="text-align: left;">1887</td>
-<td style="text-align: center;">2009</td>
-<td style="text-align: center;">1713</td>
+<td class="gt_row gt_right" headers="Vuosi">2012</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">1887</td>
+<td class="gt_row gt_right" headers="Rivitalot">2009</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1713</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2013</td>
-<td style="text-align: left;">1872</td>
-<td style="text-align: center;">1983</td>
-<td style="text-align: center;">1728</td>
+<td class="gt_row gt_right" headers="Vuosi">2013</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">1872</td>
+<td class="gt_row gt_right" headers="Rivitalot">1983</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1728</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2014</td>
-<td style="text-align: left;">1856</td>
-<td style="text-align: center;">2036</td>
-<td style="text-align: center;">1687</td>
+<td class="gt_row gt_right" headers="Vuosi">2014</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">1856</td>
+<td class="gt_row gt_right" headers="Rivitalot">2036</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1687</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2015</td>
-<td style="text-align: left;">1933</td>
-<td style="text-align: center;">2043</td>
-<td style="text-align: center;">1790</td>
+<td class="gt_row gt_right" headers="Vuosi">2015</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">1933</td>
+<td class="gt_row gt_right" headers="Rivitalot">2043</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1790</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2016</td>
-<td style="text-align: left;">1901</td>
-<td style="text-align: center;">2077</td>
-<td style="text-align: center;">1653</td>
+<td class="gt_row gt_right" headers="Vuosi">2016</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">1901</td>
+<td class="gt_row gt_right" headers="Rivitalot">2077</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1653</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2017</td>
-<td style="text-align: left;">1904</td>
-<td style="text-align: center;">2034</td>
-<td style="text-align: center;">1737</td>
+<td class="gt_row gt_right" headers="Vuosi">2017</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">1904</td>
+<td class="gt_row gt_right" headers="Rivitalot">2034</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1737</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2018</td>
-<td style="text-align: left;">1943</td>
-<td style="text-align: center;">2120</td>
-<td style="text-align: center;">1713</td>
+<td class="gt_row gt_right" headers="Vuosi">2018</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">1943</td>
+<td class="gt_row gt_right" headers="Rivitalot">2120</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1713</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2019</td>
-<td style="text-align: left;">2006</td>
-<td style="text-align: center;">2135</td>
-<td style="text-align: center;">1867</td>
+<td class="gt_row gt_right" headers="Vuosi">2019</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">2006</td>
+<td class="gt_row gt_right" headers="Rivitalot">2135</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1867</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2020</td>
-<td style="text-align: left;">2028</td>
-<td style="text-align: center;">2143</td>
-<td style="text-align: center;">1868</td>
+<td class="gt_row gt_right" headers="Vuosi">2020</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">2028</td>
+<td class="gt_row gt_right" headers="Rivitalot">2143</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1868</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2021</td>
-<td style="text-align: left;">2134</td>
-<td style="text-align: center;">2289</td>
-<td style="text-align: center;">1977</td>
+<td class="gt_row gt_right" headers="Vuosi">2021</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">2134</td>
+<td class="gt_row gt_right" headers="Rivitalot">2289</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1977</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2022</td>
-<td style="text-align: left;">2208</td>
-<td style="text-align: center;">2282</td>
-<td style="text-align: center;">2125</td>
+<td class="gt_row gt_right" headers="Vuosi">2022</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">2208</td>
+<td class="gt_row gt_right" headers="Rivitalot">2282</td>
+<td class="gt_row gt_right" headers="Kerrostalot">2125</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2023</td>
-<td style="text-align: left;">2143</td>
-<td style="text-align: center;">2258</td>
-<td style="text-align: center;">1983</td>
+<td class="gt_row gt_right" headers="Vuosi">2023</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">2143</td>
+<td class="gt_row gt_right" headers="Rivitalot">2258</td>
+<td class="gt_row gt_right" headers="Kerrostalot">1983</td>
 </tr>
 </tbody>
 </table>
-
-<span style="font-style: italic;">Lähde: </span>
-
-<sup></sup> 13mx -- Vanhojen osakeasuntojen neliöhinnat ja kauppojen lukumäärät kunnittain, vuosittain, 2006-2023 - (päivitetty: 2024-05-02T16:17:46)
-
-</div>
-
 </div>
 </div>
 </div>
-<div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-0252f674a76372404f10" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-0252f674a76372404f10">{"x":{"visdat":{"3a02cf75b19":["function () ","plotlyVisDat"]},"cur_data":"3a02cf75b19","attrs":{"3a02cf75b19":{"x":{},"y":{},"mode":"lines","line":{"shape":"spline","color":"rgb(222,35,47)","width":4},"name":"Talotyypit yhteensä","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"3a02cf75b19.1":{"x":{},"y":{},"mode":"lines","line":{"shape":"spline","color":"rgb(252,179,22)","width":4},"name":"Rivitalot","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"3a02cf75b19.2":{"x":{},"y":{},"mode":"lines","line":{"shape":"spline","color":"rgb(230,73,37)","width":4},"name":"Kerrostalot","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true}},"layout":{"margin":{"b":50,"l":50,"t":100,"r":50,"pad":5},"autosize":"F","title":{"text":"Vanhojen osakeasuntojen neliöhinnat","font":{"size":12,"color":"rgba(0,0,0)"}},"legend":{"orientation":"h","x":0,"y":-0.20000000000000001,"font":{"size":12,"color":"rgba(0,0,0)"}},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":true,"xaxis":{"domain":[0,1],"automargin":true,"title":"<b>Vuodet<\/b>","font":{"size":12,"color":"rgba(0,0,0)"},"type":"category","categoryorder":"array","categoryarray":["2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"<b>Neliöhinta (EUR/m2)<\/b>","tickformat":"d","font":{"size":12,"color":"rgba(0,0,0)"}},"annotations":[{"x":1,"y":-0.34999999999999998,"text":"13mx -- Vanhojen osakeasuntojen neliöhinnat ja kauppojen lukumäärät kunnittain, vuosittain, 2006-2023 - (päivitetty: 2024-05-02T16:17:46)","showarrow":false,"xref":"paper","yref":"paper","xanchor":"right","yanchor":"auto","xshift":0,"yshift":0,"font":{"size":8,"color":"#d9d9d9"}},{"x":1,"y":-0.34999999999999998,"text":"13mx -- Vanhojen osakeasuntojen neliöhinnat ja kauppojen lukumäärät kunnittain, vuosittain, 2006-2023 - (päivitetty: 2024-05-02T16:17:46)","showarrow":false,"xref":"paper","yref":"paper","xanchor":"right","yanchor":"auto","xshift":0,"yshift":0,"font":{"size":8,"color":"#d9d9d9"}}],"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"osakehuoneisto_neliohinta","height":800,"width":1400,"scale":2}},"data":[{"x":["2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"],"y":[1502,1654,1700,1744,1843,1830,1887,1872,1856,1933,1901,1904,1943,2006,2028,2134,2208,2143],"mode":"lines","line":{"color":"rgb(222,35,47)","shape":"spline","width":4},"name":"Talotyypit yhteensä","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"],"y":[1655,1825,1808,1860,2002,1983,2009,1983,2036,2043,2077,2034,2120,2135,2143,2289,2282,2258],"mode":"lines","line":{"color":"rgb(252,179,22)","shape":"spline","width":4},"name":"Rivitalot","type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"],"y":[1332,1461,1575,1591,1594,1627,1713,1728,1687,1790,1653,1737,1713,1867,1868,1977,2125,1983],"mode":"lines","line":{"color":"rgb(230,73,37)","shape":"spline","width":4},"name":"Kerrostalot","type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-349d02aa5b01a43766dd" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-349d02aa5b01a43766dd">{"x":{"visdat":{"49647cc5687e":["function () ","plotlyVisDat"]},"cur_data":"49647cc5687e","attrs":{"49647cc5687e":{"x":{},"y":{},"mode":"lines","line":{"shape":"spline","color":"rgb(222,35,47)","width":4},"name":"<b>Talotyypit yhteensä<\/b>","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"49647cc5687e.1":{"x":{},"y":{},"mode":"lines","line":{"shape":"spline","color":"rgb(252,179,22)","width":4},"name":"<b>Rivitalot<\/b>","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"49647cc5687e.2":{"x":{},"y":{},"mode":"lines","line":{"shape":"spline","color":"rgb(230,73,37)","width":4},"name":"<b>Kerrostalot<\/b>","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":90,"r":60,"pad":5},"autosize":false,"automargin":false,"title":{"text":"<b>Kauppojen lukumäärä, varainsiirtoverotiedot vuodesta 2020 alkaen<\/b>","font":14},"legend":{"orientation":"h","x":0,"y":-0.40000000000000002,"font":12},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":true,"xaxis":{"domain":[0,1],"automargin":true,"title":{"text":"<b>Vuodet<\/b>","font":{"size":14},"standoff":25},"tickangle":-90,"tickprefix":"<b>","ticksuffix":"<\/b><br>","showgrid":false,"type":"category","categoryorder":"array","categoryarray":["2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"]},"yaxis":{"domain":[0,1],"automargin":true,"tickformat":"d","title":{"text":"<b>Neliöhinta (EUR/m2)<\/b>","font":{"size":14},"standoff":25},"tickprefix":"<b>","ticksuffix":"<\/b><br>"},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"<b>Kauppojen lukumäärä, varainsiirtoverotiedot vuodesta 2020 alkaen<\/b>","height":800,"width":1400,"scale":6}},"data":[{"x":["2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"],"y":[1502,1654,1700,1744,1843,1830,1887,1872,1856,1933,1901,1904,1943,2006,2028,2134,2208,2143],"mode":"lines","line":{"color":"rgb(222,35,47)","shape":"spline","width":4},"name":"<b>Talotyypit yhteensä<\/b>","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"],"y":[1655,1825,1808,1860,2002,1983,2009,1983,2036,2043,2077,2034,2120,2135,2143,2289,2282,2258],"mode":"lines","line":{"color":"rgb(252,179,22)","shape":"spline","width":4},"name":"<b>Rivitalot<\/b>","type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"],"y":[1332,1461,1575,1591,1594,1627,1713,1728,1687,1790,1653,1737,1713,1867,1868,1977,2125,1983],"mode":"lines","line":{"color":"rgb(230,73,37)","shape":"spline","width":4},"name":"<b>Kerrostalot<\/b>","type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
-</section><section id="vanhojen-osakeasuntojen-kaupat" class="level2" data-number="1.2"><h2 data-number="1.2" class="anchored" data-anchor-id="vanhojen-osakeasuntojen-kaupat">
-<span class="header-section-number">1.2</span> Vanhojen osakeasuntojen kaupat</h2>
+</section><section id="vanhojen-osakeasuntojen-kaupat" class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="vanhojen-osakeasuntojen-kaupat">
+<span class="header-section-number">2.2</span> Vanhojen osakeasuntojen kaupat</h2>
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; border-bottom: 0;">
+<div id="uckbexgbjy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
 
-<table class="lightable-classic lightable-striped table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Vanhojen osakeasuntojen kaupat</caption>
-<thead><tr class="header">
-<th style="text-align: center;" data-quarto-table-cell-role="th">Vuosi</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Talotyypit yhteensä</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Rivitalot</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Kerrostalot</th>
+#uckbexgbjy .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 90%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#uckbexgbjy .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#uckbexgbjy .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#uckbexgbjy .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#uckbexgbjy .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#uckbexgbjy .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uckbexgbjy .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#uckbexgbjy .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#uckbexgbjy .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#uckbexgbjy .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#uckbexgbjy .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#uckbexgbjy .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#uckbexgbjy .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#uckbexgbjy .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#uckbexgbjy .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#uckbexgbjy .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#uckbexgbjy .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#uckbexgbjy .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uckbexgbjy .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#uckbexgbjy .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#uckbexgbjy .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uckbexgbjy .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#uckbexgbjy .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#uckbexgbjy .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uckbexgbjy .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uckbexgbjy .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#uckbexgbjy .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#uckbexgbjy .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uckbexgbjy .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#uckbexgbjy .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uckbexgbjy .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#uckbexgbjy .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uckbexgbjy .gt_left {
+  text-align: left;
+}
+
+#uckbexgbjy .gt_center {
+  text-align: center;
+}
+
+#uckbexgbjy .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#uckbexgbjy .gt_font_normal {
+  font-weight: normal;
+}
+
+#uckbexgbjy .gt_font_bold {
+  font-weight: bold;
+}
+
+#uckbexgbjy .gt_font_italic {
+  font-style: italic;
+}
+
+#uckbexgbjy .gt_super {
+  font-size: 65%;
+}
+
+#uckbexgbjy .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#uckbexgbjy .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#uckbexgbjy .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#uckbexgbjy .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#uckbexgbjy .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#uckbexgbjy .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#uckbexgbjy .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true">
+<thead class="gt_col_headings"><tr class="header">
+<th id="Vuosi" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Vuosi</th>
+<th id="Talotyypit yhteensä" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Talotyypit yhteensä</th>
+<th id="Rivitalot" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Rivitalot</th>
+<th id="Kerrostalot" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Kerrostalot</th>
 </tr></thead>
-<tbody>
+<tbody class="gt_table_body">
 <tr class="odd">
-<td style="text-align: center;">2006</td>
-<td style="text-align: left;">392</td>
-<td style="text-align: center;">172</td>
-<td style="text-align: center;">220</td>
+<td class="gt_row gt_right" headers="Vuosi">2020</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">410</td>
+<td class="gt_row gt_right" headers="Rivitalot">198</td>
+<td class="gt_row gt_right" headers="Kerrostalot">212</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2007</td>
-<td style="text-align: left;">377</td>
-<td style="text-align: center;">174</td>
-<td style="text-align: center;">203</td>
+<td class="gt_row gt_right" headers="Vuosi">2021</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">505</td>
+<td class="gt_row gt_right" headers="Rivitalot">210</td>
+<td class="gt_row gt_right" headers="Kerrostalot">295</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2008</td>
-<td style="text-align: left;">365</td>
-<td style="text-align: center;">169</td>
-<td style="text-align: center;">196</td>
+<td class="gt_row gt_right" headers="Vuosi">2022</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">384</td>
+<td class="gt_row gt_right" headers="Rivitalot">168</td>
+<td class="gt_row gt_right" headers="Kerrostalot">216</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2009</td>
-<td style="text-align: left;">350</td>
-<td style="text-align: center;">174</td>
-<td style="text-align: center;">174</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2010</td>
-<td style="text-align: left;">457</td>
-<td style="text-align: center;">229</td>
-<td style="text-align: center;">226</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2011</td>
-<td style="text-align: left;">477</td>
-<td style="text-align: center;">220</td>
-<td style="text-align: center;">254</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2012</td>
-<td style="text-align: left;">431</td>
-<td style="text-align: center;">210</td>
-<td style="text-align: center;">220</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2013</td>
-<td style="text-align: left;">358</td>
-<td style="text-align: center;">160</td>
-<td style="text-align: center;">198</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2014</td>
-<td style="text-align: left;">329</td>
-<td style="text-align: center;">136</td>
-<td style="text-align: center;">192</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2015</td>
-<td style="text-align: left;">325</td>
-<td style="text-align: center;">153</td>
-<td style="text-align: center;">168</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2016</td>
-<td style="text-align: left;">358</td>
-<td style="text-align: center;">175</td>
-<td style="text-align: center;">181</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2017</td>
-<td style="text-align: left;">362</td>
-<td style="text-align: center;">175</td>
-<td style="text-align: center;">186</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2018</td>
-<td style="text-align: left;">347</td>
-<td style="text-align: center;">178</td>
-<td style="text-align: center;">168</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2019</td>
-<td style="text-align: left;">318</td>
-<td style="text-align: center;">141</td>
-<td style="text-align: center;">176</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2020</td>
-<td style="text-align: left;">410</td>
-<td style="text-align: center;">198</td>
-<td style="text-align: center;">212</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2021</td>
-<td style="text-align: left;">505</td>
-<td style="text-align: center;">210</td>
-<td style="text-align: center;">295</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2022</td>
-<td style="text-align: left;">384</td>
-<td style="text-align: center;">168</td>
-<td style="text-align: center;">216</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2023</td>
-<td style="text-align: left;">298</td>
-<td style="text-align: center;">155</td>
-<td style="text-align: center;">143</td>
+<td class="gt_row gt_right" headers="Vuosi">2023</td>
+<td class="gt_row gt_right" headers="Talotyypit yhteensä">298</td>
+<td class="gt_row gt_right" headers="Rivitalot">155</td>
+<td class="gt_row gt_right" headers="Kerrostalot">143</td>
 </tr>
 </tbody>
 </table>
-
-<span style="font-style: italic;">Lähde: </span>
-
-<sup></sup> 13mx -- Vanhojen osakeasuntojen neliöhinnat ja kauppojen lukumäärät kunnittain, vuosittain, 2006-2023 - (päivitetty: 2024-05-02T16:17:46)
-
-</div>
-
 </div>
 </div>
 </div>
-<div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-d79bb7dd1b9867d2000d" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-d79bb7dd1b9867d2000d">{"x":{"visdat":{"3a043e82c85":["function () ","plotlyVisDat"]},"cur_data":"3a043e82c85","attrs":{"3a043e82c85":{"x":{},"y":{},"mode":"lines","line":{"shape":"spline","color":"rgb(222,35,47)","width":4},"name":"Talotyypit yhteensä","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"3a043e82c85.1":{"x":{},"y":{},"mode":"lines","line":{"shape":"spline","color":"rgb(252,179,22)","width":4},"name":"Rivitalot","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"3a043e82c85.2":{"x":{},"y":{},"mode":"lines","line":{"shape":"spline","color":"rgb(230,73,37)","width":4},"name":"Kerrostalot","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true}},"layout":{"margin":{"b":50,"l":50,"t":100,"r":50,"pad":5},"autosize":"F","title":{"text":"Vanhojen osakeasuntojen kaupat","font":{"size":12,"color":"rgba(0,0,0)"}},"legend":{"orientation":"h","x":0,"y":-0.20000000000000001,"font":{"size":12,"color":"rgba(0,0,0)"}},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":true,"xaxis":{"domain":[0,1],"automargin":true,"title":"<b>Vuodet<\/b>","font":{"size":12,"color":"rgba(0,0,0)"}},"yaxis":{"domain":[0,1],"automargin":true,"title":"<b>Lkm<\/b>","tickformat":"d","font":{"size":12,"color":"rgba(0,0,0)"}},"annotations":[{"x":1,"y":-0.34999999999999998,"text":"13mx -- Vanhojen osakeasuntojen neliöhinnat ja kauppojen lukumäärät kunnittain, vuosittain, 2006-2023 - (päivitetty: 2024-05-02T16:17:46)","showarrow":false,"xref":"paper","yref":"paper","xanchor":"right","yanchor":"auto","xshift":0,"yshift":0,"font":{"size":8,"color":"#d9d9d9"}},{"x":1,"y":-0.34999999999999998,"text":"13mx -- Vanhojen osakeasuntojen neliöhinnat ja kauppojen lukumäärät kunnittain, vuosittain, 2006-2023 - (päivitetty: 2024-05-02T16:17:46)","showarrow":false,"xref":"paper","yref":"paper","xanchor":"right","yanchor":"auto","xshift":0,"yshift":0,"font":{"size":8,"color":"#d9d9d9"}}],"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"osakehuoneisto_kaupat","height":800,"width":1400,"scale":2}},"data":[{"x":[2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023],"y":[392,377,365,350,457,477,431,358,329,325,358,362,347,318,410,505,384,298],"mode":"lines","line":{"color":"rgb(222,35,47)","shape":"spline","width":4},"name":"Talotyypit yhteensä","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023],"y":[172,174,169,174,229,220,210,160,136,153,175,175,178,141,198,210,168,155],"mode":"lines","line":{"color":"rgb(252,179,22)","shape":"spline","width":4},"name":"Rivitalot","type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023],"y":[220,203,196,174,226,254,220,198,192,168,181,186,168,176,212,295,216,143],"mode":"lines","line":{"color":"rgb(230,73,37)","shape":"spline","width":4},"name":"Kerrostalot","type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-a14998352ee2fa45a73d" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-a14998352ee2fa45a73d">{"x":{"visdat":{"496475116456":["function () ","plotlyVisDat"]},"cur_data":"496475116456","attrs":{"496475116456":{"x":{},"y":{},"mode":"lines","line":{"shape":"spline","color":"rgb(222,35,47)","width":4},"name":"<b>Talotyypit yhteensä<\/b>","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"496475116456.1":{"x":{},"y":{},"mode":"lines","line":{"shape":"spline","color":"rgb(252,179,22)","width":4},"name":"<b>Rivitalot<\/b>","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"496475116456.2":{"x":{},"y":{},"mode":"lines","line":{"shape":"spline","color":"rgb(230,73,37)","width":4},"name":"<b>Kerrostalot<\/b>","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":90,"r":60,"pad":5},"autosize":false,"automargin":false,"title":{"text":"<b>Kauppojen lukumäärä, varainsiirtoverotiedot vuodesta 2020 alkaen<\/b>","font":14},"legend":{"orientation":"h","x":0,"y":-0.40000000000000002,"font":12},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":true,"xaxis":{"domain":[0,1],"automargin":true,"title":{"text":"<b>Vuodet<\/b>","font":{"size":14},"standoff":25},"tickangle":-90,"tickprefix":"<b>","ticksuffix":"<\/b><br>","showgrid":false,"type":"category","categoryorder":"array","categoryarray":["2020","2021","2022","2023"]},"yaxis":{"domain":[0,1],"automargin":true,"tickformat":"d","title":{"text":"<b>Kaupat<\/b>","font":{"size":14},"standoff":25},"tickprefix":"<b>","ticksuffix":"<\/b><br>"},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"<b>Kauppojen lukumäärä, varainsiirtoverotiedot vuodesta 2020 alkaen<\/b>","height":800,"width":1400,"scale":6}},"data":[{"x":["2020","2021","2022","2023"],"y":[410,505,384,298],"mode":"lines","line":{"color":"rgb(222,35,47)","shape":"spline","width":4},"name":"<b>Talotyypit yhteensä<\/b>","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2020","2021","2022","2023"],"y":[198,210,168,155],"mode":"lines","line":{"color":"rgb(252,179,22)","shape":"spline","width":4},"name":"<b>Rivitalot<\/b>","type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2020","2021","2022","2023"],"y":[212,295,216,143],"mode":"lines","line":{"color":"rgb(230,73,37)","shape":"spline","width":4},"name":"<b>Kerrostalot<\/b>","type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
-</section><section id="kesämökkien-lukumäärä" class="level2" data-number="1.3"><h2 data-number="1.3" class="anchored" data-anchor-id="kesämökkien-lukumäärä">
-<span class="header-section-number">1.3</span> Kesämökkien lukumäärä</h2>
+</section><section id="kesämökkien-lukumäärä" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="kesämökkien-lukumäärä">
+<span class="header-section-number">2.3</span> Kesämökkien lukumäärä</h2>
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; border-bottom: 0;">
+<div id="vocfhanjou" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
 
-<table class="lightable-classic lightable-striped table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Kesämökkejä (lkm)</caption>
-<thead><tr class="header">
-<th style="text-align: center;" data-quarto-table-cell-role="th">Vuosi</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Kesämökit</th>
+#vocfhanjou .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 90%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#vocfhanjou .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#vocfhanjou .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#vocfhanjou .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#vocfhanjou .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#vocfhanjou .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#vocfhanjou .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#vocfhanjou .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#vocfhanjou .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#vocfhanjou .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#vocfhanjou .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#vocfhanjou .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#vocfhanjou .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#vocfhanjou .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#vocfhanjou .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#vocfhanjou .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#vocfhanjou .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#vocfhanjou .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vocfhanjou .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#vocfhanjou .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#vocfhanjou .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vocfhanjou .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#vocfhanjou .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#vocfhanjou .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#vocfhanjou .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vocfhanjou .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#vocfhanjou .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#vocfhanjou .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#vocfhanjou .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#vocfhanjou .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vocfhanjou .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#vocfhanjou .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vocfhanjou .gt_left {
+  text-align: left;
+}
+
+#vocfhanjou .gt_center {
+  text-align: center;
+}
+
+#vocfhanjou .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#vocfhanjou .gt_font_normal {
+  font-weight: normal;
+}
+
+#vocfhanjou .gt_font_bold {
+  font-weight: bold;
+}
+
+#vocfhanjou .gt_font_italic {
+  font-style: italic;
+}
+
+#vocfhanjou .gt_super {
+  font-size: 65%;
+}
+
+#vocfhanjou .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#vocfhanjou .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#vocfhanjou .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#vocfhanjou .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#vocfhanjou .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#vocfhanjou .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#vocfhanjou .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true">
+<thead class="gt_col_headings"><tr class="header">
+<th id="Vuosi" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Vuosi</th>
+<th id="Kesämökkejä (lkm)" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Kesämökkejä (lkm)</th>
 </tr></thead>
-<tbody>
+<tbody class="gt_table_body">
 <tr class="odd">
-<td style="text-align: center;">1970</td>
-<td style="text-align: left;">2278</td>
+<td class="gt_row gt_right" headers="Vuosi">1970</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">2278</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">1980</td>
-<td style="text-align: left;">2616</td>
+<td class="gt_row gt_right" headers="Vuosi">1980</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">2616</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">1990</td>
-<td style="text-align: left;">3298</td>
+<td class="gt_row gt_right" headers="Vuosi">1990</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">3298</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">1995</td>
-<td style="text-align: left;">3857</td>
+<td class="gt_row gt_right" headers="Vuosi">1995</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">3857</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2000</td>
-<td style="text-align: left;">4247</td>
+<td class="gt_row gt_right" headers="Vuosi">2000</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">4247</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2005</td>
-<td style="text-align: left;">4206</td>
+<td class="gt_row gt_right" headers="Vuosi">2005</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">4206</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2010</td>
-<td style="text-align: left;">4498</td>
+<td class="gt_row gt_right" headers="Vuosi">2010</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">4498</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2015</td>
-<td style="text-align: left;">4626</td>
+<td class="gt_row gt_right" headers="Vuosi">2015</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">4626</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2020</td>
-<td style="text-align: left;">4506</td>
+<td class="gt_row gt_right" headers="Vuosi">2020</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">4506</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2021</td>
-<td style="text-align: left;">4502</td>
+<td class="gt_row gt_right" headers="Vuosi">2021</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">4502</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2022</td>
-<td style="text-align: left;">4486</td>
+<td class="gt_row gt_right" headers="Vuosi">2022</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">4486</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2023</td>
-<td style="text-align: left;">4482</td>
+<td class="gt_row gt_right" headers="Vuosi">2023</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">4482</td>
 </tr>
 </tbody>
 </table>
-
-<span style="font-style: italic;">Lähde: </span>
-
-<sup></sup> 116j -- Kesämökit alueittain, 1970-2023 - (päivitetty: 2024-03-25T16:28:49)
-
-</div>
-
 </div>
 </div>
 </div>
-<div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-57720247276ea38109c9" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-57720247276ea38109c9">{"x":{"visdat":{"3a030eb29fd":["function () ","plotlyVisDat"]},"cur_data":"3a030eb29fd","attrs":{"3a030eb29fd":{"x":{},"y":{},"mode":"lines","line":{"shape":"spline","color":"rgb(222,35,47)","width":4},"name":"Kesämökit","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":50,"l":50,"t":100,"r":50,"pad":5},"autosize":"F","title":{"text":"Kesämökkejä (lkm)","font":{"size":12,"color":"rgba(0,0,0)"}},"legend":{"orientation":"h","x":0,"y":-0.20000000000000001,"font":{"size":12,"color":"rgba(0,0,0)"}},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":true,"xaxis":{"domain":[0,1],"automargin":true,"title":"<b>Vuodet<\/b>","font":{"size":12,"color":"rgba(0,0,0)"},"type":"category","categoryorder":"array","categoryarray":["1970","1980","1990","1995","2000","2005","2010","2015","2020","2021","2022","2023"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"<b>Lkm<\/b>","tickformat":"d","font":{"size":12,"color":"rgba(0,0,0)"}},"annotations":[{"x":1,"y":-0.34999999999999998,"text":"116j -- Kesämökit alueittain, 1970-2023 - (päivitetty: 2024-03-25T16:28:49)","showarrow":false,"xref":"paper","yref":"paper","xanchor":"right","yanchor":"auto","xshift":0,"yshift":0,"font":{"size":8,"color":"#d9d9d9"}},{"x":1,"y":-0.34999999999999998,"text":"116j -- Kesämökit alueittain, 1970-2023 - (päivitetty: 2024-03-25T16:28:49)","showarrow":false,"xref":"paper","yref":"paper","xanchor":"right","yanchor":"auto","xshift":0,"yshift":0,"font":{"size":8,"color":"#d9d9d9"}}],"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"kesamokit_lkm","height":800,"width":1400,"scale":2}},"data":[{"x":["1970","1980","1990","1995","2000","2005","2010","2015","2020","2021","2022","2023"],"y":[2278,2616,3298,3857,4247,4206,4498,4626,4506,4502,4486,4482],"mode":"lines","line":{"color":"rgb(222,35,47)","shape":"spline","width":4},"name":"Kesämökit","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-607f4d492e14755be9dc" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-607f4d492e14755be9dc">{"x":{"visdat":{"49644b4e5365":["function () ","plotlyVisDat"]},"cur_data":"49644b4e5365","attrs":{"49644b4e5365":{"x":{},"y":{},"mode":"lines","line":{"shape":"spline","color":"rgb(222,35,47)","width":4},"name":"<b>Kesämökkejä (lkm)<\/b>","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":90,"r":60,"pad":5},"autosize":false,"automargin":false,"title":{"text":"Kesämökkejä (lkm)","font":14},"legend":{"orientation":"h","x":0,"y":-0.40000000000000002,"font":12},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":true,"xaxis":{"domain":[0,1],"automargin":true,"title":{"text":"<b>Vuodet<\/b>","font":{"size":14},"standoff":25},"tickangle":-90,"tickprefix":"<b>","ticksuffix":"<\/b><br>","showgrid":false,"type":"category","categoryorder":"array","categoryarray":["1970","1980","1990","1995","2000","2005","2010","2015","2020","2021","2022","2023"]},"yaxis":{"domain":[0,1],"automargin":true,"tickformat":"d","title":{"text":"<b>Lkm<\/b>","font":{"size":14},"standoff":25},"tickprefix":"<b>","ticksuffix":"<\/b><br>"},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"Kesämökkejä (lkm)","height":800,"width":1400,"scale":6}},"data":[{"x":["1970","1980","1990","1995","2000","2005","2010","2015","2020","2021","2022","2023"],"y":[2278,2616,3298,3857,4247,4206,4498,4626,4506,4502,4486,4482],"mode":"lines","line":{"color":"rgb(222,35,47)","shape":"spline","width":4},"name":"<b>Kesämökkejä (lkm)<\/b>","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
-</section><section id="kesämökit-valmistumisvuoden-mukaan" class="level2" data-number="1.4"><h2 data-number="1.4" class="anchored" data-anchor-id="kesämökit-valmistumisvuoden-mukaan">
-<span class="header-section-number">1.4</span> Kesämökit valmistumisvuoden mukaan</h2>
+</section><section id="kesämökit-valmistumisvuoden-mukaan" class="level2" data-number="2.4"><h2 data-number="2.4" class="anchored" data-anchor-id="kesämökit-valmistumisvuoden-mukaan">
+<span class="header-section-number">2.4</span> Kesämökit valmistumisvuoden mukaan</h2>
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; border-bottom: 0;">
+<div id="vjedcfofpd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
 
-<table class="lightable-classic lightable-striped table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Kesämökit valmistumisvuoden mukaan</caption>
-<thead><tr class="header">
-<th style="text-align: center;" data-quarto-table-cell-role="th">Vuosi</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Rakennusvuosi</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Kesämökkejä (lkm)</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Kesämökkejä (%)</th>
+#vjedcfofpd .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 90%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#vjedcfofpd .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#vjedcfofpd .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#vjedcfofpd .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#vjedcfofpd .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#vjedcfofpd .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#vjedcfofpd .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#vjedcfofpd .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#vjedcfofpd .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#vjedcfofpd .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#vjedcfofpd .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#vjedcfofpd .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#vjedcfofpd .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#vjedcfofpd .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#vjedcfofpd .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#vjedcfofpd .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#vjedcfofpd .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#vjedcfofpd .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vjedcfofpd .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#vjedcfofpd .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#vjedcfofpd .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vjedcfofpd .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#vjedcfofpd .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#vjedcfofpd .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#vjedcfofpd .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vjedcfofpd .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#vjedcfofpd .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#vjedcfofpd .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#vjedcfofpd .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#vjedcfofpd .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vjedcfofpd .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#vjedcfofpd .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vjedcfofpd .gt_left {
+  text-align: left;
+}
+
+#vjedcfofpd .gt_center {
+  text-align: center;
+}
+
+#vjedcfofpd .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#vjedcfofpd .gt_font_normal {
+  font-weight: normal;
+}
+
+#vjedcfofpd .gt_font_bold {
+  font-weight: bold;
+}
+
+#vjedcfofpd .gt_font_italic {
+  font-style: italic;
+}
+
+#vjedcfofpd .gt_super {
+  font-size: 65%;
+}
+
+#vjedcfofpd .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#vjedcfofpd .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#vjedcfofpd .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#vjedcfofpd .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#vjedcfofpd .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#vjedcfofpd .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#vjedcfofpd .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true">
+<thead class="gt_col_headings"><tr class="header">
+<th id="Vuosi" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Vuosi</th>
+<th id="Rakennusvuosi" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Rakennusvuosi</th>
+<th id="Kesämökkejä (lkm)" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Kesämökkejä (lkm)</th>
+<th id="Kesämökkejä (%)" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Kesämökkejä (%)</th>
 </tr></thead>
-<tbody>
+<tbody class="gt_table_body">
 <tr class="odd">
-<td style="text-align: center;">2023</td>
-<td style="text-align: left;">Yhteensä</td>
-<td style="text-align: center;">4482</td>
-<td style="text-align: center;">100.0</td>
+<td class="gt_row gt_right" headers="Vuosi">2023</td>
+<td class="gt_row gt_left" headers="Rakennusvuosi">Yhteensä</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">4482</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (%)">100.0</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2023</td>
-<td style="text-align: left;">- 1920</td>
-<td style="text-align: center;">409</td>
-<td style="text-align: center;">9.1</td>
+<td class="gt_row gt_right" headers="Vuosi">2023</td>
+<td class="gt_row gt_left" headers="Rakennusvuosi">- 1920</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">409</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (%)">9.1</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2023</td>
-<td style="text-align: left;">1921 - 1939</td>
-<td style="text-align: center;">150</td>
-<td style="text-align: center;">3.3</td>
+<td class="gt_row gt_right" headers="Vuosi">2023</td>
+<td class="gt_row gt_left" headers="Rakennusvuosi">1921 - 1939</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">150</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (%)">3.3</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2023</td>
-<td style="text-align: left;">1940 - 1959</td>
-<td style="text-align: center;">770</td>
-<td style="text-align: center;">17.2</td>
+<td class="gt_row gt_right" headers="Vuosi">2023</td>
+<td class="gt_row gt_left" headers="Rakennusvuosi">1940 - 1959</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">770</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (%)">17.2</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2023</td>
-<td style="text-align: left;">1960 - 1969</td>
-<td style="text-align: center;">834</td>
-<td style="text-align: center;">18.6</td>
+<td class="gt_row gt_right" headers="Vuosi">2023</td>
+<td class="gt_row gt_left" headers="Rakennusvuosi">1960 - 1969</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">834</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (%)">18.6</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2023</td>
-<td style="text-align: left;">1970 - 1979</td>
-<td style="text-align: center;">697</td>
-<td style="text-align: center;">15.6</td>
+<td class="gt_row gt_right" headers="Vuosi">2023</td>
+<td class="gt_row gt_left" headers="Rakennusvuosi">1970 - 1979</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">697</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (%)">15.6</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2023</td>
-<td style="text-align: left;">1980 - 1989</td>
-<td style="text-align: center;">468</td>
-<td style="text-align: center;">10.4</td>
+<td class="gt_row gt_right" headers="Vuosi">2023</td>
+<td class="gt_row gt_left" headers="Rakennusvuosi">1980 - 1989</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">468</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (%)">10.4</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2023</td>
-<td style="text-align: left;">1990 - 1999</td>
-<td style="text-align: center;">555</td>
-<td style="text-align: center;">12.4</td>
+<td class="gt_row gt_right" headers="Vuosi">2023</td>
+<td class="gt_row gt_left" headers="Rakennusvuosi">1990 - 1999</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">555</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (%)">12.4</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2023</td>
-<td style="text-align: left;">2000 - 2009</td>
-<td style="text-align: center;">297</td>
-<td style="text-align: center;">6.6</td>
+<td class="gt_row gt_right" headers="Vuosi">2023</td>
+<td class="gt_row gt_left" headers="Rakennusvuosi">2000 - 2009</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">297</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (%)">6.6</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2023</td>
-<td style="text-align: left;">2010 - 2019</td>
-<td style="text-align: center;">217</td>
-<td style="text-align: center;">4.8</td>
+<td class="gt_row gt_right" headers="Vuosi">2023</td>
+<td class="gt_row gt_left" headers="Rakennusvuosi">2010 - 2019</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">217</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (%)">4.8</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">2023</td>
-<td style="text-align: left;">2020 -</td>
-<td style="text-align: center;">85</td>
-<td style="text-align: center;">1.9</td>
+<td class="gt_row gt_right" headers="Vuosi">2023</td>
+<td class="gt_row gt_left" headers="Rakennusvuosi">2020 -</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (lkm)">85</td>
+<td class="gt_row gt_right" headers="Kesämökkejä (%)">1.9</td>
 </tr>
 </tbody>
 </table>
-
-<span style="font-style: italic;">Lähde: </span>
-
-<sup></sup> 116k -- Kesämökit valmistumisvuoden mukaan, 2023 - (päivitetty: 2024-03-25T16:28:50)
-
 </div>
-
 </div>
 </div>
 </div>
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -1151,7 +2676,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
 <li class="nav-item">
- LGPL-2.1-or-later 2023, Copyright 2023 Kangasalan kaupunki.
+ LGPL-2.1-or-later 2024, Copyright 2023 Kangasalan kaupunki.
   </li>  
 </ul>
 <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Kangasalakehitys/tilannekuva/edit/main/asuminen.qmd" class="toc-action"><i class="bi bi-github"></i>Muokkaa sivua</a></li></ul></div></div>
